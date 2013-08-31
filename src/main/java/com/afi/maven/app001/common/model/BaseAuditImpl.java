@@ -15,7 +15,7 @@ import javax.persistence.TemporalType;
  * @author AFI
  */
 @MappedSuperclass
-public class BaseAuditImpl implements BaseAuditInterface{
+public class BaseAuditImpl extends AbstractBaseEntity implements BaseAuditInterface{
     
     @Column(name="VCREABY")
     private String createBy;
