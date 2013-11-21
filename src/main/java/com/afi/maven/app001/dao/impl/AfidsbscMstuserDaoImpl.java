@@ -4,10 +4,10 @@
  */
 package com.afi.maven.app001.dao.impl;
 
-import com.afi.maven.app001.common.dao.GenericHibernateDao;
-import com.afi.maven.app001.common.model.AbstractBaseEntity;
+import com.afi.maven.common.dao.GenericHibernateDao;
+import com.afi.maven.common.model.AbstractBaseEntity;
 import com.afi.maven.app001.dao.AfidsbscMstuserDaoInterface;
-import com.afi.maven.app001.model.AfidsbscMstuser;
+import com.afi.maven.model.AfidsbscMstuser;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -16,8 +16,18 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("afidsbscMstuserDao")
 public class AfidsbscMstuserDaoImpl extends GenericHibernateDao<AfidsbscMstuser, AbstractBaseEntity>
-    implements AfidsbscMstuserDaoInterface{
-    
-    
-    
+    implements AfidsbscMstuserDaoInterface{    
+
+    @Override
+    public AfidsbscMstuser getAfidsbscMstuser(AfidsbscMstuser afidsbscMstuser) {
+        AfidsbscMstuser result;
+        result = (AfidsbscMstuser) getCurrentSession()
+                .createQuery("from AfidsbscMstuser user "
+                + "where user.vUserName = :userName "
+                + "and user.vPassword = :password")
+                .setParameter("userName", afidsbscMstuser.getvUserName())
+                .setParameter("password", afidsbscMstuser.getvPassword())
+                .uniqueResult();
+        return result;
+    }
 }

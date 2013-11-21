@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.afi.maven.app001.common.service;
+package com.afi.maven.common.service;
 
-import com.afi.maven.app001.common.model.BaseAuditInterface;
+import com.afi.maven.common.model.BaseAuditInterface;
 import java.util.Date;
 
 /**

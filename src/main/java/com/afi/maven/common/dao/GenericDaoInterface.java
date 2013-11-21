@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.afi.maven.app001.common.dao;
+package com.afi.maven.common.dao;
 
 import java.io.Serializable;
 

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.afi.maven.app001.common.model;
+package com.afi.maven.common.model;
 
 import java.util.Date;
 import javax.persistence.Column;

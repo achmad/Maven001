@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.afi.maven.app001.common.util;
+package com.afi.maven.common.util;
 
 /** 
  *

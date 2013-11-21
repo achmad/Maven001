@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"      
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Login Luar</title>
+    </h:head>
+    <body>
+        <h:outputText value="TEST"/>
+        <h:form id="frm_login" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><h:outputText value="User Name : "/> </td>
+                    <td><p:inputText id="txtUserName" value="#{mbApp000.voUserLogin.userName}"/></td>
+                </tr> 
+                <tr>
+                    <td><h:outputText value="Password : "/></td>
+                    <td><p:password id="txtPassword" required="true"  value="#{mbApp000.voUserLogin.password}"/></td>
+                </tr>  
+                <tr>
+                    <td><p:commandButton value="Submit" id="btnSubmit" actionListener="#{mbApp000.doLogin()}"/></td>
+                    <td><p:commandButton value="Cancel" id="btnCancel"/></td>
+                </tr>  
+            </table>
+        </h:form>    
+    </body>
+</html>

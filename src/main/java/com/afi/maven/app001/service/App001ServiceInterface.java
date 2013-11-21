@@ -4,7 +4,7 @@
  */
 package com.afi.maven.app001.service;
 
-import com.afi.maven.app001.model.AfidsbscMstuser;
+import com.afi.maven.model.AfidsbscMstuser;
 
 /**
  *

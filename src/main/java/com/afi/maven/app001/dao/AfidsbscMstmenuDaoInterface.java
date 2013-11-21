@@ -6,15 +6,15 @@ package com.afi.maven.app001.dao;
 
 import com.afi.maven.common.dao.GenericDaoInterface;
 import com.afi.maven.common.model.AbstractBaseEntity;
+import com.afi.maven.model.AfidsbscMstmenu;
 import com.afi.maven.model.AfidsbscMstuser;
 
 /**
  *
  * @author AFI
  */
-public interface AfidsbscMstuserDaoInterface extends GenericDaoInterface<AfidsbscMstuser,AbstractBaseEntity>{
+public interface AfidsbscMstmenuDaoInterface extends GenericDaoInterface<AfidsbscMstmenu,AbstractBaseEntity>{
     
-    public AfidsbscMstuser getAfidsbscMstuser(AfidsbscMstuser afidsbscMstuser);
-    
-    
+    public AfidsbscMstmenu getMenuByMenuId(String vMenuId);   
+    public Long retrieveCountChild(String vMenuId);
 }

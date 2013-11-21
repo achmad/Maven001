@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.afi.maven.app001.common.dao;
+package com.afi.maven.common.dao;
 
+import com.afi.maven.model.AfidsbscMstuser;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import org.hibernate.Session;
